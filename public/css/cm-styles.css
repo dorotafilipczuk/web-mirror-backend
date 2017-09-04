@@ -1,0 +1,35 @@
+#cm-pre-text {
+  font-size: 16px;
+}
+
+#cm-box {
+  width: 48%;
+  font-size: 12px;
+  float: left;
+  padding: 1%;
+  height: 26em;
+}
+
+#cm-header {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#cm-text-half {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+#cm-text-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+#cm-button {
+  display: inline;
+  float: center;
+  margin-left: 300px;
+  margin-right: 300px;
+}

@@ -1,0 +1,12 @@
+#survey-table {
+    border-collapse: collapse; 
+    font-size: 14px;   
+}
+#survey-td, #survey-th {
+    padding: 10px;
+    text-align: center;
+    max-width: 120px;
+}
+#survey-th:empty {
+    border: 0;
+}

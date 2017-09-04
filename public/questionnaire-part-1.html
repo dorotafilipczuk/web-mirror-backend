@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Questionnaire Part 1 | Meaningful Consent in Digital Economy</title>
+  <meta name="author" content="Dorota Filipczuk">
+  <meta name="description" content="User Study">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" 
+  type="text/css">
+</head>
+
+<body>
+
+  <div id="page-wrap">
+  	<p><b>Part I</b></p>
+  	
+    <p>1. How old are you?</p>
+    <select id="q1">
+      <option value="">Select...</option>
+      <option value="age1">18-25</option>
+      <option value="age2">25-30</option>
+      <option value="age3">30-40</option>
+      <option value="age4">40-50</option>
+      <option value="age4">50-60</option>
+      <option value="age4">60+</option>
+    </select>
+    <p id="errorTag1"></p>
+    
+    <p>2. What is your gender?</p>
+    <select id="q2">
+      <option value="">Select...</option>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="other">Other</option>
+      <option value="preferNotToSay">Prefer Not to Say</option>
+    </select>
+    <p id="errorTag2"></p>
+    
+    <p>3. What is your nationality?</p>
+    <select id="q3">
+      <!-- List of nationalities from: https://gist.github.com/didats/8154290. -->
+      <option value="">Select...</option>
+      <option value="afghan">Afghan</option>
+      <option value="albanian">Albanian</option>
+      <option value="algerian">Algerian</option>
+      <option value="american">American</option>
+      <option value="andorran">Andorran</option>
+      <option value="angolan">Angolan</option>
+      <option value="antiguans">Antiguans</option>
+      <option value="argentinean">Argentinean</option>
+      <option value="armenian">Armenian</option>
+      <option value="australian">Australian</option>
+      <option value="austrian">Austrian</option>
+      <option value="azerbaijani">Azerbaijani</option>
+      <option value="bahamian">Bahamian</option>
+      <option value="bahraini">Bahraini</option>
+      <option value="bangladeshi">Bangladeshi</option>
+      <option value="barbadian">Barbadian</option>
+      <option value="barbudans">Barbudans</option>
+      <option value="batswana">Batswana</option>
+      <option value="belarusian">Belarusian</option>
+      <option value="belgian">Belgian</option>
+      <option value="belizean">Belizean</option>
+      <option value="beninese">Beninese</option>
+      <option value="bhutanese">Bhutanese</option>
+      <option value="bolivian">Bolivian</option>
+      <option value="bosnian">Bosnian</option>
+      <option value="brazilian">Brazilian</option>
+      <option value="british">British</option>
+      <option value="bruneian">Bruneian</option>
+      <option value="bulgarian">Bulgarian</option>
+      <option value="burkinabe">Burkinabe</option>
+      <option value="burmese">Burmese</option>
+      <option value="burundian">Burundian</option>
+      <option value="cambodian">Cambodian</option>
+      <option value="cameroonian">Cameroonian</option>
+      <option value="canadian">Canadian</option>
+      <option value="cape verdean">Cape Verdean</option>
+      <option value="central african">Central African</option>
+      <option value="chadian">Chadian</option>
+      <option value="chilean">Chilean</option>
+      <option value="chinese">Chinese</option>
+      <option value="colombian">Colombian</option>
+      <option value="comoran">Comoran</option>
+      <option value="congolese">Congolese</option>
+      <option value="costa rican">Costa Rican</option>
+      <option value="croatian">Croatian</option>
+      <option value="cuban">Cuban</option>
+      <option value="cypriot">Cypriot</option>
+      <option value="czech">Czech</option>
+      <option value="danish">Danish</option>
+      <option value="djibouti">Djibouti</option>
+      <option value="dominican">Dominican</option>
+      <option value="dutch">Dutch</option>
+      <option value="east timorese">East Timorese</option>
+      <option value="ecuadorean">Ecuadorean</option>
+      <option value="egyptian">Egyptian</option>
+      <option value="emirian">Emirian</option>
+      <option value="equatorial guinean">Equatorial Guinean</option>
+      <option value="eritrean">Eritrean</option>
+      <option value="estonian">Estonian</option>
+      <option value="ethiopian">Ethiopian</option>
+      <option value="fijian">Fijian</option>
+      <option value="filipino">Filipino</option>
+      <option value="finnish">Finnish</option>
+      <option value="french">French</option>
+      <option value="gabonese">Gabonese</option>
+      <option value="gambian">Gambian</option>
+      <option value="georgian">Georgian</option>
+      <option value="german">German</option>
+      <option value="ghanaian">Ghanaian</option>
+      <option value="greek">Greek</option>
+      <option value="grenadian">Grenadian</option>
+      <option value="guatemalan">Guatemalan</option>
+      <option value="guinea-bissauan">Guinea-Bissauan</option>
+      <option value="guinean">Guinean</option>
+      <option value="guyanese">Guyanese</option>
+      <option value="haitian">Haitian</option>
+      <option value="herzegovinian">Herzegovinian</option>
+      <option value="honduran">Honduran</option>
+      <option value="hungarian">Hungarian</option>
+      <option value="icelander">Icelander</option>
+      <option value="indian">Indian</option>
+      <option value="indonesian">Indonesian</option>
+      <option value="iranian">Iranian</option>
+      <option value="iraqi">Iraqi</option>
+      <option value="irish">Irish</option>
+      <option value="israeli">Israeli</option>
+      <option value="italian">Italian</option>
+      <option value="ivorian">Ivorian</option>
+      <option value="jamaican">Jamaican</option>
+      <option value="japanese">Japanese</option>
+      <option value="jordanian">Jordanian</option>
+      <option value="kazakhstani">Kazakhstani</option>
+      <option value="kenyan">Kenyan</option>
+      <option value="kittian and nevisian">Kittian and Nevisian</option>
+      <option value="kuwaiti">Kuwaiti</option>
+      <option value="kyrgyz">Kyrgyz</option>
+      <option value="laotian">Laotian</option>
+      <option value="latvian">Latvian</option>
+      <option value="lebanese">Lebanese</option>
+      <option value="liberian">Liberian</option>
+      <option value="libyan">Libyan</option>
+      <option value="liechtensteiner">Liechtensteiner</option>
+      <option value="lithuanian">Lithuanian</option>
+      <option value="luxembourger">Luxembourger</option>
+      <option value="macedonian">Macedonian</option>
+      <option value="malagasy">Malagasy</option>
+      <option value="malawian">Malawian</option>
+      <option value="malaysian">Malaysian</option>
+      <option value="maldivan">Maldivan</option>
+      <option value="malian">Malian</option>
+      <option value="maltese">Maltese</option>
+      <option value="marshallese">Marshallese</option>
+      <option value="mauritanian">Mauritanian</option>
+      <option value="mauritian">Mauritian</option>
+      <option value="mexican">Mexican</option>
+      <option value="micronesian">Micronesian</option>
+      <option value="moldovan">Moldovan</option>
+      <option value="monacan">Monacan</option>
+      <option value="mongolian">Mongolian</option>
+      <option value="moroccan">Moroccan</option>
+      <option value="mosotho">Mosotho</option>
+      <option value="motswana">Motswana</option>
+      <option value="mozambican">Mozambican</option>
+      <option value="namibian">Namibian</option>
+      <option value="nauruan">Nauruan</option>
+      <option value="nepalese">Nepalese</option>
+      <option value="new zealander">New Zealander</option>
+      <option value="ni-vanuatu">Ni-Vanuatu</option>
+      <option value="nicaraguan">Nicaraguan</option>
+      <option value="nigerien">Nigerien</option>
+      <option value="north korean">North Korean</option>
+      <option value="northern irish">Northern Irish</option>
+      <option value="norwegian">Norwegian</option>
+      <option value="omani">Omani</option>
+      <option value="pakistani">Pakistani</option>
+      <option value="palauan">Palauan</option>
+      <option value="panamanian">Panamanian</option>
+      <option value="papua new guinean">Papua New Guinean</option>
+      <option value="paraguayan">Paraguayan</option>
+      <option value="peruvian">Peruvian</option>
+      <option value="polish">Polish</option>
+      <option value="portuguese">Portuguese</option>
+      <option value="qatari">Qatari</option>
+      <option value="romanian">Romanian</option>
+      <option value="russian">Russian</option>
+      <option value="rwandan">Rwandan</option>
+      <option value="saint lucian">Saint Lucian</option>
+      <option value="salvadoran">Salvadoran</option>
+      <option value="samoan">Samoan</option>
+      <option value="san marinese">San Marinese</option>
+      <option value="sao tomean">Sao Tomean</option>
+      <option value="saudi">Saudi</option>
+      <option value="scottish">Scottish</option>
+      <option value="senegalese">Senegalese</option>
+      <option value="serbian">Serbian</option>
+      <option value="seychellois">Seychellois</option>
+      <option value="sierra leonean">Sierra Leonean</option>
+      <option value="singaporean">Singaporean</option>
+      <option value="slovakian">Slovakian</option>
+      <option value="slovenian">Slovenian</option>
+      <option value="solomon islander">Solomon Islander</option>
+      <option value="somali">Somali</option>
+      <option value="south african">South African</option>
+      <option value="south korean">South Korean</option>
+      <option value="spanish">Spanish</option>
+      <option value="sri lankan">Sri Lankan</option>
+      <option value="sudanese">Sudanese</option>
+      <option value="surinamer">Surinamer</option>
+      <option value="swazi">Swazi</option>
+      <option value="swedish">Swedish</option>
+      <option value="swiss">Swiss</option>
+      <option value="syrian">Syrian</option>
+      <option value="taiwanese">Taiwanese</option>
+      <option value="tajik">Tajik</option>
+      <option value="tanzanian">Tanzanian</option>
+      <option value="thai">Thai</option>
+      <option value="togolese">Togolese</option>
+      <option value="tongan">Tongan</option>
+      <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+      <option value="tunisian">Tunisian</option>
+      <option value="turkish">Turkish</option>
+      <option value="tuvaluan">Tuvaluan</option>
+      <option value="ugandan">Ugandan</option>
+      <option value="ukrainian">Ukrainian</option>
+      <option value="uruguayan">Uruguayan</option>
+      <option value="uzbekistani">Uzbekistani</option>
+      <option value="venezuelan">Venezuelan</option>
+      <option value="vietnamese">Vietnamese</option>
+      <option value="welsh">Welsh</option>
+      <option value="yemenite">Yemenite</option>
+      <option value="zambian">Zambian</option>
+      <option value="zimbabwean">Zimbabwean</option>
+    </select>
+    <p id="errorTag3"></p>
+    
+    <p>4. Which city/town do you currently live in?</p>
+    <input type="text" id="q4">
+    <p id="errorTag4"></p>
+    
+    <p>5. What is the highest degree of education you have completed?</p>
+    <select id="q5">
+      <option value="">Select...</option>
+      <option value="none">None</option>
+      <option value="preUni">Pre-university Qualification (A-level/AS-level/IB or equivalent
+          </option>
+      <option value="foundation">Foundation Year</option>
+      <option value="bachelors">Bachelor's Degree</option>
+      <option value="masters">Master's Degree</option>
+      <option value="phd">PhD</option>
+      <option value="other">Trade/Technical/Vocational Training</option>
+      <option value="preferNotToSay">Prefer Not to Say</option>
+    </select>
+    <p id="errorTag5"></p>
+    
+    <p>6. How many hours a day do you spend browsing websites?</p>
+    <input type="text" id="q6">
+    <p id="errorTag6"></p>
+    
+    <p>7. Have you used the following:</p>
+    <table id="survey-table">
+      <tr>
+        <th id="survey-th"></th>
+        <th id="survey-th">No, I never heard of it.</th>
+        <th id="survey-th">No, but I heard of it.</th>
+        <th id="survey-th">Yes, I tried it.</th>
+        <th id="survey-th">Yes, I use it regularly.</th>
+        <th id="survey-th">Yes, I used to use it regularly before, but I don't use it now.
+            </th>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Facebook<p id="row1ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-1" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-1" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-1" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-1" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-1" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+      <td id="survey-td">Twitter<p id="row2ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-2" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-2" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-2" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-2" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-2" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+      <td id="survey-td">Snapchat<p id="row3ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-3" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-3" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-3" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-3" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-3" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">WhatsApp<p id="row4ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-4" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-4" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-4" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-4" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-4" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Ghostery<p id="row5ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-5" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-5" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-5" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-5" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-5" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Microsoft Word<p id="row6ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-6" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-6" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-6" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-6" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-6" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">AdBlock<p id="row7ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-7" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-7" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-7" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-7" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-7" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">AdBlock Plus<p id="row8ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-8" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-8" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-8" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-8" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-8" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Untangle's Ad Blocker<p id="row9ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-9" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-9" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-9" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-9" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-9" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Ad-aware Ad Blocker<p id="row10ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-10" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-10" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-10" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-10" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-10" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Ads Blocker (ads-blocker.com)<p id="row11ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-11" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-11" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-11" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-11" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-11" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Overleaf<p id="row12ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-12" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-12" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-12" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-12" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-12" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Disconnect.me<p id="row13ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-13" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-13" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-13" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-13" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-13" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Spotify<p id="row14ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-14" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-14" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-14" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-14" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-14" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Instagram<p id="row15ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-15" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-15" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-15" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-15" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-15" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Goodblock<p id="row16ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-16" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-16" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-16" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-16" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-16" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Tor<p id="row17ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-17" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-17" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-17" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-17" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-17" value="5"></td>
+      </tr>
+    </table>
+
+    <p>8. Have you done the following:</p>
+    <table id="survey-table">
+      <tr>
+        <th id="survey-th"></th>
+        <th id="survey-th">No, I never heard of it.</th>
+        <th id="survey-th">No - I heard of it, but I don't know why I would need to do it.
+            </th>
+        <th id="survey-th">No, but I heard of it and understand why others do it.</th>
+        <th id="survey-th">Yes, I've done it once in the past year.</th>
+        <th id="survey-th">Yes, I've done it 2-4 times in the past year.</th>
+        <th id="survey-th">Yes, I've done it more than 4 times in the past year.</th>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Cleared browsing history<p id="row18ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-18" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-18" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-18" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-18" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-18" value="5"></td>
+        <td id="survey-td"><input type="radio" name="row-18" value="6"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">Deleted browser cookies<p id="row19ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-19" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-19" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-19" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-19" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-19" value="5"></td>
+        <td id="survey-td"><input type="radio" name="row-19" value="6"></td>
+      </tr>
+    </table>  
+    
+    <p>9. Have you...</p>
+    <table id="survey-table">
+      <tr>
+        <th id="survey-th"></th>
+        <th id="survey-th">No, I never heard of it.</th>
+        <th id="survey-th">No - I heard of it, but I don't know why I would need to do it.
+            </th>
+        <th id="survey-th">No, but I heard of it and understand why others do it.</th>
+        <th id="survey-th">Yes, I've done it before, but I don't do it now.</th>
+        <th id="survey-th">Yes, I have.</th>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">...disabled third party cookies in your browser?
+            <p id="row20ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-20" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-20" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-20" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-20" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-20" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">...enabled opt-out in your browser?
+            <p id="row21ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-21" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-21" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-21" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-21" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-21" value="5"></td>
+      </tr>
+      <tr id="survey-tr">
+        <td id="survey-td">...used Do Not Track?<p id="row22ErrorTag"></p></td>
+        <td id="survey-td"><input type="radio" name="row-22" value="1"></td>
+        <td id="survey-td"><input type="radio" name="row-22" value="2"></td>
+        <td id="survey-td"><input type="radio" name="row-22" value="3"></td>
+        <td id="survey-td"><input type="radio" name="row-22" value="4"></td>
+        <td id="survey-td"><input type="radio" name="row-22" value="5"></td>
+      </tr>
+    </table>  
+    
+    <br><br>
+    <button class="button" onclick="checkPart1('* Please answer the question!', 6, 22)">Continue</button>
+    
+    <div id="footer">
+	  &copy; 2015 University of Southampton.
+    </div>
+  </div>
+
+</body>
+<script type="text/javascript" src="js/checks.js"></script>
+</html>
+

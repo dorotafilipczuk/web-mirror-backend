@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <title>Study - Meaningful Consent in Digital Economy</title>
+  <meta name="author" content="Dorota Filipczuk">
+  <meta name="description" content="User Study">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" 
+      type="text/css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+      crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap-theme.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+      crossorigin="anonymous">-->
+</head>
+
+<body>
+
+  <div id="page-wrap" ng-controller="AppCtrl">
+  	<p><b>Participant Information & Consent Form</b></p>
+  	
+  <table id="header-table">
+    <tr>
+      <td id="header-table-td">Ethics reference number:  ERGO/FPSE/24293</td>
+      <td id="header-table-td">Version: 3</td>
+      <td id="header-table-td">Date: 2017-05-03</td>
+    </tr>
+    <tr>
+      <td colspan="3" id="header-table-td">Study Title: Web Mirror II: Intent vs. Action</td>
+    </tr>
+    <tr>
+      <td colspan="3" id="header-table-td">Investigator: Dorota Filipczuk, Richard Gomer, Dr Alper T. Alan,
+          Dr Enrico Gerding, Prof m.c. schraefel</td>
+    </tr>
+  </table>
+  	
+  <p>Please read this information carefully before deciding to take part in this research.
+      Your participation is completely voluntary.</p>
+
+  <p><b>What is the research about?</b>  This is a research project which aims to 
+      understand how we can design useful information about online tracking. We are also
+      creating an anonymous database of browsing history for future study. The study is a 
+      part of the Meaningful Consent in Digital Economy project.</p>
+      
+  </p><b>Why have I been chosen?</b>  You have been approached because you responded to
+      our advertisement.</p>
+      
+  <p><b>What will happen to me if I take part?</b>  You will be asked to install a Chrome 
+      extension on your own machine, which will be collecting your browsing history and 
+      information on use of countermeasures. After that, you will fill online surveys 
+      related to online tracking, which will take around 30 minutes. At the end of the 
+      study, you will be asked to fill another survey online. This will also take about 30
+      minutes.</p>
+      
+  <p><b>Are there any benefits in my taking part?</b>  The study will add to current 
+  knowledge about privacy online.  You will also receive a &pound;5 Amazon gift voucher for your
+  participation at the end of the study.<p>
+  
+  <p><b>Are there any risks involved?</b> There are no particular risks associated with 
+      your participation.</p>
+      
+  <p><b>Will my data be confidential?</b> All data collected stored confidentially, will 
+      not be shared with anyone else and will only be used in accordance with the Data 
+      Protection Act (1998).</p>
+
+  <p>If you would like to access your data after your participation, change it, or 
+      withdraw it, please contact one of the investigators (e-mails: 
+      <a href="mailto:dorota@ecs.soton.ac.uk">dorota@ecs.soton.ac.uk</a>, 
+      <a href="mailto:r.gomer@soton.ac.uk">r.gomer@soton.ac.uk</a>) or the project 
+      supervisor (e-mail: <a href="mailto:mc@ecs.soton.ac.uk">mc@ecs.soton.ac.uk</a>) who 
+      will arrange this.</p>
+      
+  <p><b>What happens if I change my mind?</b> You may withdraw at any time and for any 
+      reason.</p>
+      
+  <p><b>What happens if something goes wrong?</b> Should you have any concern or 
+      complaint, contact us if possible (e-mail: <a 
+      href="mailto:dorota@ecs.soton.ac.uk">dorota@ecs.soton.ac.uk</a>), otherwise please
+      contact the FPSE Office 
+      (<a href="mailto:ergopse@soton.ac.uk">ergopse@soton.ac.uk</a>) 
+      or any other authoritative body such
+      as the Research Integrity & Governance Team 
+      (<a href="mailto:rgoinfo@soton.ac.uk">rgoinfo@soton.ac.uk</a>).</p>
+
+  <p>Please continue if you agree:</p>
+  
+  <form action="">
+    <input type="checkbox"><i>I have read and understood the Participant Information 
+        (version 3 dated 2017-05-03) and have had the opportunity to ask questions about 
+        the study.</i><br>
+    <input type="checkbox"><i> I agree to take part in this study.</i><br>
+    <input type="checkbox"><i> I understand my participation is voluntary and I may 
+        withdraw at any time and for any reason.</i>
+  </form>
+  
+  <p><b>Data Protection</b></p>
+
+  <p>I understand that information collected during my participation in this study is will
+      be stored on a password protected secure University server and that this information
+      will only be used in accordance with the Data Protection Act (1998).  The DPA (1998)
+      requires data to be processed fairly and lawfully in accordance with the rights of 
+      participants and protected by appropriate security.  In addition, the DPA (1998) 
+      makes provision for an appropriate authority, such as the Police, to access data 
+      held by the study.</p>
+      
+  <input ng-model="test">
+  {{test}}
+
+  <table>
+    <tr>
+      <td><div style="padding-right: 20px; padding-left: 20px;">
+        Name of Participant:
+      </div></td>
+      <td><input type="text" size="50" id="theName"></td>
+      <td><p id="errorTag"></p><td>
+    </tr>
+    <tr>
+      <td><div style="padding-right: 20px; padding-left: 20px;">
+        Date:
+      </div></td>
+      <td><input type="text" size="50" id="theDate" disabled="disabled"></td>
+    </tr>
+  </table>
+
+    <p>Once you have checked the boxes above and signed the consent form with your name,
+        click the button below to start the first questionnaire.</p>
+    <button class="button" onclick="checkConsentForm('theName')">Continue</button>
+    
+    <div id="footer">
+	  &copy; 2015 University of Southampton.
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js">
+  </script>
+  <script src="controllers/controller.js"></script>
+</body>
+
+<script type="text/javascript" src="js/todays-date.js"></script>
+<script type="text/javascript" src="js/checks.js"></script>
+
+
+</html>
+
